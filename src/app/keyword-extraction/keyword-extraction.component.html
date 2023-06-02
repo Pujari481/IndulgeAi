@@ -1,0 +1,23 @@
+<!-- <div class="continaer">
+<input type="file" (change)="onFileSelected($event)" class="file-input" accept=".pdf" />
+<button (click)="viewPdf()">View</button>
+  <div *ngIf="pdfSrc" class="pdf-viewer-container">
+      <ngx-extended-pdf-viewer [src]="pdfSrc" [show-all]="true"></ngx-extended-pdf-viewer>   
+  </div>
+</div> -->
+
+<pdf-viewer
+    [src]="src"
+    [original-size]="true"
+    [render-text]="true"
+    [rotation]="0"
+    [show-all]="true"
+    [fit-to-page]="false"
+    [zoom]="1"
+    [zoom-scale]="'page-width'"
+    [stick-to-page]="true"
+    [external-link-target]="'blank'"
+    [autoresize]="true"
+    [show-borders]="false"
+    class="pdf-viewer"
+></pdf-viewer>

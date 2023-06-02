@@ -1,0 +1,45 @@
+<div class="app-shell">
+    <header class="app-header">
+      <nav class="navbar">
+        <div class="logo">
+          <a routerLink="/">IndulgeAi</a>
+        </div>
+        <div class="menu">
+          <a routerLink="/">Home</a>
+          <a routerLink="/"> Blog </a>
+          <div class="dropdown">
+            <button class="dropdown-toggle" type="button" id="productsDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              IndulgeAi Products
+            </button>
+            <div class="dropdown-menu" aria-labelledby="productsDropdown">
+              <a class="dropdown-item" routerLink="/document-ocr">Document OCR</a>
+              <a class="dropdown-item" routerLink="/keyword-extraction">Keywords Extraction</a>
+              <a class="dropdown-item" routerLink="/insights-processing">Insights Processing</a>
+            </div>
+          </div>
+          <!-- Add more menu items as needed -->
+        </div>
+      </nav>
+    </header>
+    
+    <div class="content">
+      <router-outlet></router-outlet>
+    </div>
+    
+    <footer class="app-footer">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <a routerLink="/">IndulgeAi</a>
+        </div>
+        <div class="footer-links">
+          <!-- <a routerLink="/">Home</a>
+          <a routerLink="/document-ocr">Document OCR</a> -->
+          <!-- Add more links as needed -->
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p> &copy; 2023 IndulgeAi. All rights reserved.</p>
+      </div>
+    </footer>
+  </div>
+  

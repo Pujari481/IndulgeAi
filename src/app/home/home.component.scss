@@ -1,0 +1,83 @@
+.hero {
+    background-color: #333333;
+    color: #ffffff;
+    padding: 100px;
+    text-align: center;
+  }
+  
+  .hero-title {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .hero-description {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+  
+  .hero-button {
+    background-color: #ffffff;
+    color: #333333;
+    padding: 12px 24px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+  }
+  
+  .features {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+  }
+  
+  .feature {
+    flex: 1;
+    text-align: center;
+    margin: 0 20px;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    margin-bottom: 30px;
+  }
+
+  .feature.hover {
+    background-color: violet;
+    cursor: pointer;
+  }
+  
+  .icon {
+    font-size: 48px;
+    color: #333333;
+    margin-bottom: 20px;
+  }
+  
+  .feature-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .feature-description {
+    font-size: 16px;
+  }
+  
+  .testimonial {
+    background-color: #f4f4f4;
+    padding: 50px 0;
+    text-align: center;
+  }
+  
+  .testimonial-quote {
+    font-size: 24px;
+    font-style: italic;
+    margin-bottom: 20px;
+  }
+  
+  .testimonial-author {
+    font-size: 18px;
+    font-weight: bold;
+  }  

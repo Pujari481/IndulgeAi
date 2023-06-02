@@ -1,0 +1,15 @@
+<div class="container">
+    <h2 class="title">Document OCR from Image to Text</h2>
+    <div class="input-container">
+      <input type="file" (change)="handleFileInput($event)" class="file-input" accept="image/jpg, image/png">
+      <button mat-raised-button color="primary" (click)="performOCR()" [disabled]="!selectedFile">Perform OCR</button>
+    </div>
+    <div *ngIf="ocrInProgress" class="progress-container">
+      <!-- <mat-progress-bar mode="inderminate"></mat-progress-bar> -->
+    </div>
+    <div *ngIf="ocrResult" class="result-container">
+      <h3 class="subtitle">OCR Result:</h3>
+      <pre class="result">{{ ocrResult }}</pre>
+    </div>
+  </div>
+  

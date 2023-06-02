@@ -1,0 +1,15 @@
+<p>insights-processing works!</p>
+<div class="container">
+    <h2 class="title">Insights Processing</h2>
+    <div class="input-container">
+      <!-- <textarea [(ngModel)]="data" class="data-input" placeholder="Enter your data"></textarea> -->
+      <button mat-raised-button color="primary" (click)="processData()">Process Data</button>
+    </div>
+    <div *ngIf="insights" class="insights-container">
+      <h3 class="subtitle">Generated Insights:</h3>
+      <ul class="insights-list">
+        <li *ngFor="let insight of insights">{{ insight }}</li>
+      </ul>
+    </div>
+  </div>
+  
