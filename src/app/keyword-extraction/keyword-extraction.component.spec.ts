@@ -6,10 +6,12 @@ describe('KeywordExtractionComponent', () => {
   let component: KeywordExtractionComponent;
   let fixture: ComponentFixture<KeywordExtractionComponent>;
 
-  beforeEach(() => {
-    TestBed.configureTestingModule({
-      declarations: [KeywordExtractionComponent]
-    });
+  beforeEach(async () => {
+    await TestBed.configureTestingModule({
+      declarations: [ KeywordExtractionComponent ]
+    })
+    .compileComponents();
+
     fixture = TestBed.createComponent(KeywordExtractionComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

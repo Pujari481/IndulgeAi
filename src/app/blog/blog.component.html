@@ -1,0 +1,15 @@
+<div class="blog">
+    <div class="blog-header">
+      <h1>Write a Blog Post</h1>
+    </div>
+    <div class="blog-content">
+      <textarea class="blog-input" [(ngModel)]="newPost" placeholder="Write your blog post here"></textarea>
+      <button class="blog-button" (click)="addPost()">Post</button>
+    </div>
+    <div class="blog-posts">
+      <h2>Recent Posts</h2>
+      <ul>
+        <li *ngFor="let post of posts">{{ post.title }}</li>
+      </ul>
+    </div>
+  </div>

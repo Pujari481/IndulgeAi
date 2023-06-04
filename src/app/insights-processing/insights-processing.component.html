@@ -1,15 +1,52 @@
-<p>insights-processing works!</p>
-<div class="container">
-    <h2 class="title">Insights Processing</h2>
-    <div class="input-container">
-      <!-- <textarea [(ngModel)]="data" class="data-input" placeholder="Enter your data"></textarea> -->
-      <button mat-raised-button color="primary" (click)="processData()">Process Data</button>
-    </div>
-    <div *ngIf="insights" class="insights-container">
-      <h3 class="subtitle">Generated Insights:</h3>
-      <ul class="insights-list">
-        <li *ngFor="let insight of insights">{{ insight }}</li>
-      </ul>
+<!-- <div class="container">
+  <div class="preview-container">
+    <input type="file" (change)="handleFileInput($event)" accept=".xlsx">
+    <h3> Excel Data Preview: </h3>
+    <div class="excel-preview" *ngIf="excelData">
+      <table>
+        <thead>
+          <tr>
+            <th *ngFor="let header of excelData.header">{{ header }}</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let row of excelData.rows">
+            <td *ngFor="let cell of row">{{ cell }}</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   </div>
-  
+  <button class="process-button" (click)="processInsights()">Process Insights</button> -->
+  <!-- <h3> Processed Insights: </h3> -->
+  <!-- <div class="dashboard-container" *ngIf="showDashboard"> -->
+    <!-- Dashboard content here -->
+  <!-- </div>
+</div> -->
+
+<div class="container">
+  <div class="preview-container">
+    <input type="file" (change)="handleFileInput($event)" accept=".xlsx">
+    <div class="excel-preview" *ngIf="excelData">
+      <table>
+        <thead>
+          <tr>
+            <th *ngFor="let header of excelData.header">{{ header }}</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let row of excelData.rows">
+            <td *ngFor="let cell of row">{{ cell }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="dashboard-container" *ngIf="showDashboard">
+    <h3>Dashboard</h3>
+    <div class="chart-container">
+      <canvas #salaryChart></canvas>
+    </div>
+  </div>
+  <button class="process-button" (click)="processInsights()">Process Insights</button>
+</div>

@@ -5,7 +5,7 @@ import { AgGridModule } from 'ag-grid-angular';
 import { HttpClientModule } from '@angular/common/http';
 import { PdfViewerModule } from 'ng2-pdf-viewer'
 import { NgxExtendedPdfViewerModule } from 'ngx-extended-pdf-viewer';
-import { pdfDefaultOptions } from 'ngx-extended-pdf-viewer/public_api';
+// import { pdfDefaultOptions } from 'ngx-extended-pdf-viewer/public_api';
 // import * as pdfjsLib from 'pdfjs-dist'
 // import { PdfViewerComponent } from 'ng2-pdf-viewer/public_api';
 
@@ -21,6 +21,7 @@ import { RouterModule } from '@angular/router';
 import { KeywordExtractionComponent } from './keyword-extraction/keyword-extraction.component';
 import { InsightsProcessingComponent } from './insights-processing/insights-processing.component';
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
+import { BlogComponent } from './blog/blog.component';
 // import { TesseractService } from './services/TesseractService';
 // import { NlpService } from './services/nlp.service';
 // import { InsightsService } from './services/insights.service';
@@ -37,6 +38,7 @@ import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
     DocumentOCRComponent,
     InsightsProcessingComponent,
     KeywordExtractionComponent,
+    BlogComponent,
   ],
   imports: [
     BrowserModule,

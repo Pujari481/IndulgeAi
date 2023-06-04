@@ -9,25 +9,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./keyword-extraction.component.scss']
 })
 export class KeywordExtractionComponent {
-  // pdfSrc: string | ArrayBuffer | null = null;
-  // selectedFile: File | null = null;
-
-  // onFileSelected(event: any): void {
-  //   this.selectedFile = event.target.files[0];
-  // }
-
-  // viewPdf(): void {
-  //   if (this.selectedFile) {
-  //     const reader: FileReader = new FileReader();
-
-  //     reader.onload = (e: any) => {
-  //       this.pdfSrc = e.target.result;
-  //     };
-
-  //     reader.readAsArrayBuffer(this.selectedFile);
-  //   }
-  // }
-  title: string = 'ng2-pdf-viewer';
-  src: string = 'assets/SA.pdf'
+  src: string = 'assets/50_Awesome_Chat_GPT_Prompts.pdf'
 
 }
